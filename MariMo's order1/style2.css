@@ -1,0 +1,163 @@
+@font-face {
+    font-family: "Apercu";
+    src: url("./fonts/apercu-bold-pro.woff") format("woff");/* Modern Browsers */
+        
+    font-weight: normal;
+    font-style: normal;
+    
+}
+@font-face {
+    font-family: "Suisse";
+    src: url("./fonts/SuisseIntlMono-Regular-WebS.woff2") format("woff2");/* Modern Browsers */
+        
+    font-weight: 100;
+    font-style: normal;
+}
+
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* height: 100vh; */
+    color: rgb(16,22,47);
+    background-color: rgb(242,251,255);
+    
+}
+
+.wrapper{
+    
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1100px;
+    /* background-color: aqua; */
+    /* height: 100%; */
+}
+
+.backgroundImage{
+    position: absolute;
+    background-image: url(./img/stairsPic2.svg);
+    background-size: cover;
+    background-position: center;
+    top: 55px;
+    height: 290px;
+    width: 1500px;
+}
+h1{
+    margin: 0 0 5px 0;
+}
+p{
+    margin-top: 25px;
+    font-family: "Suisse";
+    font-weight: lighter;
+    font-size: .95rem;
+    line-height: 150%;
+    padding-bottom: 0.8125rem;
+    margin: 0;  
+    
+}
+
+.aTag{
+    font-family: Apercu;
+    font-weight: 400;
+}
+.searchInput{
+    padding-left: 5px;
+    
+    height: 50px;
+    border: 1px solid blue;
+    border-right: none;
+    width: 260px;
+    /* text-align: center; */
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+    word-spacing: 6px;
+    font-size: 16px;
+}
+
+.btn{
+    height: 54px;
+    width: 54px;
+    background-color: blue;
+    border: 1px solid blue;
+    border-left: none;
+}
+
+.buttonsDiv{
+    margin-top: 30px;
+    font-family: Suisse;
+    font-size: 15px;
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btns{
+    margin-right: 25px;
+    background-color: white;
+    padding: 8px;
+    border: 2px solid black ;
+}
+
+.categorydiv{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(69, 69, 69);
+    font-family: Suisse;
+    font-size: 13px;
+}
+
+.longBlocks{
+    padding: 7px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    /* margin-top: 20px; */
+    width: 98%;
+    height: 90px;
+    border: 1px solid black;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.longBlocksMainDiv{
+    margin-top: 17px;
+    margin-bottom: 70px;
+    width: 100%;
+}
+
+.headerText{
+    margin: 2px 0 5px 0;
+    
+    font-family: Apercu;
+    font-size: 19px;
+}
+
+.textDescription{
+    line-height: 17px;
+    color: rgb(84, 85, 87);
+    width: 450px;
+    font-weight: 500;
+    font-family: sans-serif;
+    /* color: #10162f !important; */
+    font-size: 13px;
+}
+
+.aTagsBlock{
+    margin-right: 170px;
+    font-family: sans-serif;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: rgb(77, 46, 219);
+}

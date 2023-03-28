@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="screen">
+        <div class="phone">
+            <div class="calculator">
+                <div id="numbers" class="answer">
+                    <div id = "num1" class="num1"></div>
+                    <div id = "sign" class="sign"></div>
+                    <div id = "num2" class="num2"></div>
+                </div>
+                <hr>
+                <div class="row">
+                    <button type="button" class="buttonGray" onclick = "deleteAll()">AC</button>
+                    <button type="button" class="buttonGray">+/-</button>
+                    <button type="button" class="buttonGray">%</button>
+                    <button type="button" value="/" class="buttonOrange" onclick="showSign(this.value)">/</button>
+                </div>
+                <div class="row">
+                    <button type="button" value="7" class="buttonDarkGray" onclick="show(this.value)">7</button>
+                    <button type="button" value="8" class="buttonDarkGray" onclick="show(this.value)">8</button>
+                    <button type="button" value="9" class="buttonDarkGray" onclick="show(this.value)">9</button>
+                    <button type="button" value="*" class="buttonOrange"   onclick="showSign(this.value)">*</button>
+                </div>
+                <div class="row">
+                    <button type="button" value="4" class="buttonDarkGray" onclick="show(this.value)">4</button>
+                    <button type="button" value="5" class="buttonDarkGray" onclick="show(this.value)">5</button>
+                    <button type="button" value="6" class="buttonDarkGray" onclick="show(this.value)">6</button>
+                    <button type="button" value="-" class="buttonOrange"   onclick="showSign(this.value)">-</button>
+                </div>
+                <div class="row">
+                    <button type="button" value="1" class="buttonDarkGray" onclick="show(this.value)">1</button>
+                    <button type="button" value="2" class="buttonDarkGray" onclick="show(this.value)">2</button>
+                    <button type="button" value="3" class="buttonDarkGray" onclick="show(this.value)">3</button>
+                    <button type="button" value="+" class="buttonOrange"   onclick="showSign(this.value)">+</button>
+                </div>
+                <div class="row">
+                    <button type="button" value="0" class="buttonLongDarkGray" onclick="show(this.value)">0</button>
+                   
+                    <button type="button" class="buttonDarkGray">,</button>
+                    <button type="button" class="buttonOrange" onclick="process()">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        var num1 ="";
+        var num2 ="";
+        var sign ="";
+        var result;
+
+        
+
+        function show(val){
+            console.log(val);
+            if(num1 == "" && sign == ""){
+                num1 = num1 + "" + val;
+                document.getElementById("num1").innerHTML = val;
+            }
+            else if(num1 != "" && sign == ""){
+                num1 = num1 + "" + val;
+                document.getElementById("num1").innerHTML = num1;
+            }
+            else if(num1 != "" && sign != ""){
+                num2 = num2 + "" + val;
+                document.getElementById("num2").innerHTML = num2;
+            }
+        }
+
+        function showSign(val){
+            console.log(val);
+            if(sign == "" || sing != ""){
+                sign = val;
+                document.getElementById("sign").innerHTML = sign;
+            }
+        }
+
+
+        function deleteAll(){
+            num1 = "";
+            num2 = "";
+            sign = "";
+            document.getElementById("num1").innerHTML = "";
+            document.getElementById("num2").innerHTML = "";
+            document.getElementById("sign").innerHTML = "";
+            console.log(num1 + num2 + sign);
+        }
+
+
+        function process() {
+            
+            switch (sign) {
+                case '+': result = Number(num1) + Number(num2); break;
+                case '-': result = Number(num1) - Number(num2); break;
+                case '*': result = Number(num1) * Number(num2); break;
+                case '/': result = Number(num1) / Number(num2); break;
+            }
+
+            document.getElementById("num1").innerHTML = result;
+            document.getElementById("num2").innerHTML = "";
+            num1 = result;
+            num2 = "";
+            sign = "";
+            document.getElementById("sign").innerHTML = "";
+        }
+
+
+
+    </script>
+</body>
+</html>

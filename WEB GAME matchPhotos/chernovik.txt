@@ -1,0 +1,58 @@
+if(count == 1){
+    selected.push(id)
+    selected.push(document.getElementById(id).getElementsByClassName("theback")[0].style.backgroundImage)
+    console.log(selected)
+    if(selected[1] == selected[3]){
+      setTimeout(() => {
+        document.getElementById(selected[0]).getElementsByClassName("theback")[0].style.backgroundImage = 'url("./img/done.jpg")'
+        setTimeout(() => {
+          document.getElementById(selected[2]).getElementsByClassName("theback")[0].style.backgroundImage = 'url("./img/done.jpg")'  
+        }, 2000);
+      }, 2000);
+
+      // document.getElementById(0).classList.toggle("reverse") 
+      // document.getElementById(2).classList.toggle("reverse")  
+      count = 0;
+      selected = ""
+
+      
+    }else{
+      document.getElementById(selected[0]).getElementsByClassName("theback")[0].style.backgroundImage = 'url("./img/mystery.jpg")'
+      document.getElementById(selected[2]).getElementsByClassName("theback")[0].style.backgroundImage = 'url("./img/mystery.jpg")'
+      document.getElementById(selected[0]).classList.toggle("reverse") 
+      document.getElementById(selected[2]).classList.toggle("reverse")  
+      count = 0;
+      selected = ""
+      
+    }
+    // document.getElementById(id).classList.toggle("reverse")  
+    // count+=1;
+  }
+  // if(count == 2){
+  //   if(selected[1] == selected[3]){
+
+  //     document.getElementById(selected[0]).getElementsByClassName("theback")[0].style.backgroundImage = 'url("./img/done.jpg")'
+  //     document.getElementById(selected[2]).getElementsByClassName("theback")[0].style.backgroundImage = 'url("./img/done.jpg")'
+  //     // document.getElementById(0).classList.toggle("reverse") 
+  //     // document.getElementById(2).classList.toggle("reverse")  
+
+
+  //     count = 0;
+  //     selected = ""
+  //   }else{
+  //     document.getElementById(selected[0]).getElementsByClassName("theback")[0].style.backgroundImage = 'url("./img/mystery.jpg")'
+  //     document.getElementById(selected[2]).getElementsByClassName("theback")[0].style.backgroundImage = 'url("./img/mystery.jpg")'
+  //     document.getElementById(selected[0]).classList.toggle("reverse") 
+  //     document.getElementById(selected[2]).classList.toggle("reverse")  
+  //     count = 0;
+  //     selected = ""
+  //   }
+  // }
+  else{
+    selected.push(id)
+    selected.push(document.getElementById(id).getElementsByClassName("theback")[0].style.backgroundImage)
+    console.log(selected)
+    document.getElementById(id).classList.toggle("reverse")  
+    count+=1;
+  }
+  

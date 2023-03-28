@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KazakhTour</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="../index.js"></script>
+</head>
+<body>
+
+    <!-- navbar starts -->
+    <nav>
+        <div class="navbetween">
+            <a href="./index.html" style="margin-left: 20px;">
+                <div class="logoblock" ></div>
+            </a>
+            <!-- <img style = "margin-left: 30px;" src="./img/logo.jpg"> -->
+            <div class="displaynone">
+                
+                <a class="navtext" href="./EastKZ.html">East Kazakhstan</a>
+                <a class="navtext" href="./SouthKZ.html">South Kazakhstan</a>
+                <a class="navtext" href="./WestKZ.html">West Kazakhstan</a>
+                <a class="navtext" href="./NorthKZ.html">North Kazakhstan</a>
+                <a class="navtext" href="./centralKZ.html">Central Kazakhstan</a>
+                <a class="navtext" href="./Prices.html">Prices</a>
+                <a class="navtext" href="./aboutUs.html">About Us</a>
+                <a class="navbutton" style="color: rgb(60, 58, 58);">Make an order</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Navbar ends -->
+
+
+    <!-- div with mountain photo, text, blocks STARTS-->
+    <div class="entryblock">
+        <div class="welcomeMessage">
+            <h1 class = "" style="margin-bottom: 30px; font-size: 80px;">WELCOME TO KAZAKHSTAN!</h1>
+            <h2 class = "" style="width: 1000px; font-size: 40px;">To experience the beauty of this lovely country, we offer you tour plans for the most gorgeous places in Kazakhstan</h2>    
+        </div>
+
+        <!-- Те три блока начинаются-->
+        <div class="buycoursediv" style = "background-position-x: 900px; background-position-y: -200px; background-size: 900px;" id="cases">
+            <div style="display: flex; flex-direction: column; justify-content: center; ">
+                <div>
+                    <div class="bigboldtext">
+                        &nbsp;We guarantee you
+                        <!-- &nbsp; - это пробел -->
+                    </div>
+                </div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
+
+                    <div class="manblock" >
+                        <div style="display: flex; align-items: center;">
+                            <img src="../img/galochka.png" class = "galochka">
+                            <div>
+                                <div class="name">An unforgettable trip</div>
+                                <div class="graytext">professional filming</div>
+                            </div>
+                        </div>
+                        <div class="justtext" style="color: rgb(23, 22, 22); margin-top: 10px;">On our tours, you will have unforgettable fun and get to know the sights of your native country. </div>
+                        <div class="name" style="font-size: 20px; ">sign up for a tour</div>
+                    </div>
+
+                    <div class="manblock" >
+                        <div style="display: flex; align-items: center;">
+                            <img src="../img/galochka.png" class = "galochka">
+                            <div>
+                                <div class="name">New sensations</div>
+                                <div class="graytext">lakes, rivers, mountains</div>
+                            </div>
+                        </div>
+                        <div class="justtext" style="color: rgb(23, 22, 22); margin-top: 10px;">you will be amazed by new discoveries that you did not expect from Kazakhstan</div>
+                        <div class="name" style="font-size: 20px;">sign up for a tour</div>
+                    </div>
+
+                    <div class="manblock" >
+                        <div style="display: flex; align-items: center;">
+                            <img src="../img/galochka.png" class = "galochka">
+                            <div>
+                                <div class="name">Indescribable landscapes</div>
+                                <div class="graytext">deserts, steppes, mountains</div>
+                            </div>
+                        </div>
+                        <div class="justtext" style="color: rgb(23, 22, 22); margin-top: 10px;">You will see stunning landscapes ranging from deserts and steppes to mountains and lakes</div>
+                        <div class="name" style="font-size: 20px;">sign up for a tour</div>
+                    </div>
+                    
+                </div>
+                
+    
+    
+            </div>
+            
+        </div>
+        <!-- Те три блока Заканчиваются-->
+
+    </div>
+    <!-- div with mountain photo, text, blocks ENDS-->
+
+    <div class="natureBlock">
+       <h1>What awaits you on our tour?</h1>
+    </div>
+    <div class="container">
+        <div class="gallery">
+            <figure class="gallery__item gallery__item--1">
+                <img src="../img/charyn.jpg" alt="Gallery image 1" class="gallery__img">
+                <button id="show-popup-btn" type="button" class="btn btn-primary mt-1">review</button>
+            </figure>
+            <figure class="gallery__item gallery__item--2">
+                <img src="../img/kaspi.jpg" alt="Gallery image 2" class="gallery__img">
+                <button id="show-popup-btn1" type="button" class="btn btn-info mt-1">review</button>
+            </figure>
+            <figure class="gallery__item gallery__item--3">
+                <img src="../img/severKZ.jpg" alt="Gallery image 3" class="gallery__img">
+                <button id="show-popup-btn2" type="button" class="btn btn-warning mt-1 ">review</button>
+
+            </figure>
+            <figure class="gallery__item gallery__item--4">
+                <img src="../img/ugKZ.jpg" alt="Gallery image 4" class="gallery__img">
+                <button id="show-popup-btn3" type="button" class="btn btn-danger mt-1">review</button>
+
+            </figure>
+            <figure class="gallery__item gallery__item--5">
+                <img src="../img/vostokKZ.jpg" alt="Gallery image 5" class="gallery__img">
+                <button id="show-popup-btn4" type="button" class="btn btn-success mt-1">review</button>
+
+            </figure>
+            <figure class="gallery__item gallery__item--6">
+                <img src="../img/zapadKZ.jpeg" alt="Gallery image 6" class="gallery__img">
+                <button id="show-popup-btn5" type="button" class="btn btn-danger mt-1">review</button>
+
+            </figure>
+        </div>
+    </div>
+    
+    
+
+    
+<!-- всплывающиеся окна фоток -->
+    <div id="modal">
+        <div class="modal_image">
+            <img src="../img/charyn.jpg">
+            <button id="close-btn" type="button" class="btn btn-primary mt-1">Close</button>
+        </div>
+    </div>
+    
+    <div id="modal1">
+        <div class="modal_image1">
+            <img src="../img/kaspi.jpg">
+            <button id="close-btn1" type="button" class="btn btn-primary mt-1">Close</button>
+        </div>
+    </div>
+
+    <div id="modal2">
+        <div class="modal_image2">
+            <img src="../img/severKZ.jpg">
+            <button id="close-btn2" type="button" class="btn btn-primary mt-1">Close</button>
+        </div>
+    </div>
+
+    <div id="modal3">
+        <div class="modal_image3">
+            <img src="../img/ugKZ.jpg">
+            <button id="close-btn3" type="button" class="btn btn-primary mt-1">Close</button>
+        </div>
+    </div>
+
+    <div id="modal4">
+        <div class="modal_image4">
+            <img src="../img/vostokKZ.jpg">
+            <button id="close-btn4" type="button" class="btn btn-primary mt-1">Close</button>
+        </div>
+    </div>
+
+    <div id="modal5">
+        <div class="modal_image5">
+            <img src="../img/zapadKZ.jpeg">
+            <button id="close-btn5" type="button" class="btn btn-primary mt-1">Close</button>
+        </div>
+    </div>
+<!-- всплывающиеся окна фоток заканчиваются-->
+
+  
+    
+    <footer>
+        <h1 style="font-size: 30px; color:white">Thanks for being with us!</h1>
+        <h1 style="font-size: 30px; color:white">our contacts: 8 777 666 44 22</h1>
+    </footer>
+</body>
+</html>
